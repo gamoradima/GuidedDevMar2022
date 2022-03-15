@@ -1,0 +1,17 @@
+﻿{
+  "Descriptor": {
+    "UId": "5948a895-2cd2-669f-6101-05d2028ed4ec",
+    "Name": "DevDima2022",
+    "Type": 1,
+    "ModifiedOnUtc": "\/Date(1647354166000)\/",
+    "Maintainer": "Customer",
+    "ProjectPath": "Files/DevDima2022.csproj",
+    "DependsOn": [
+      {
+        "UId": "d7559847-f38e-410c-baee-6f43bbe80d42",
+        "PackageVersion": "7.8.0",
+        "Name": "SalesEnterpriseSoftkey_ENU"
+      }
+    ]
+  }
+}
