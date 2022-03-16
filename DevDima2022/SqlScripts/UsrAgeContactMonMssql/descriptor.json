@@ -1,0 +1,10 @@
+﻿{
+  "SqlScript": {
+    "UId": "051716d7-e6d0-2714-3d2b-875dc74e4a64",
+    "Name": "UsrAgeContactMonMssql",
+    "DBEngineType": 0,
+    "InstallType": 0,
+    "ModifiedOnUtc": "\/Date(1647357098000)\/",
+    "DependsOn": []
+  }
+}
