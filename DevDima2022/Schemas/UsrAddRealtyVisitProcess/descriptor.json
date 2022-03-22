@@ -4,6 +4,7 @@
     "Name": "UsrAddRealtyVisitProcess",
     "ModifiedOnUtc": "\/Date(1647601930000)\/",
     "ManagerName": "ProcessSchemaManager",
-    "Caption": "Добавить просмотры недвижимости"
+    "Caption": "Добавить просмотры недвижимости",
+    "DependsOn": []
   }
 }

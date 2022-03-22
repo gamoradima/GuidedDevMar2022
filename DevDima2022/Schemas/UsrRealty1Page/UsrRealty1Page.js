@@ -13,6 +13,19 @@ define("UsrRealty1Page", ["RightUtilities", "ProcessModuleUtilities"], function(
 				"dataValueType": this.Terrasoft.DataValueType.BOOLEAN,
 				"type": this.Terrasoft.ViewModelColumnType.VIRTUAL_COLUMN,
 				"value": false
+			},
+			"UsrCommissionUSD": {
+				dependencies: [
+					{
+						columns: ["UsrPriceUSD", "UsrOfferType"],
+						methodName: "calcCommission"
+					}
+				]
+			},
+			"UsrOfferType" : {
+				lookupListConfig: {
+					columns: ["UsrCommissionCoeff"]
+				}
 			}
 		},
 		modules: /**SCHEMA_MODULES*/{}/**SCHEMA_MODULES*/,
@@ -73,11 +86,21 @@ define("UsrRealty1Page", ["RightUtilities", "ProcessModuleUtilities"], function(
 			}
 		}/**SCHEMA_BUSINESS_RULES*/,
 		methods: {
+			calcCommission: function() {
+				var price = this.get("UsrPriceUSD");
+				var offerTypeObject = this.get("UsrOfferType");
+				var result = 0;
+				if (offerTypeObject) {
+					var coeff = offerTypeObject.UsrCommissionCoeff;
+					result = price * coeff / 100;
+				}
+				this.set("UsrCommissionUSD", result);
+			},
 			onEntityInitialized: function() {
 				this.callParent();
 				RightUtilities.checkCanExecuteOperation({ operation: "CanEditRealtyPrice" },
 						this.getEditPriceOperationResult, this);
-								
+				this.calcCommission();
 			},
 			getEditPriceOperationResult: function(result) {
 				this.set("IsPriceEditable", result);
@@ -238,37 +261,51 @@ define("UsrRealty1Page", ["RightUtilities", "ProcessModuleUtilities"], function(
 				"propertyName": "items",
 				"index": 2
 			},
-            /* Метаданные для добавления на страницу пользовательской кнопки. */
-            {
-                /* Выполняется операция добавления элемента на страницу. */
-                "operation": "insert",
-                /* Мета-имя родительского контейнера, в который добавляется кнопка. */
-                "parentName": "ProfileContainer",
-                /* Кнопка добавляется в коллекцию элементов родительского элемента. */
-                "propertyName": "items",
-                /* Мета-имя добавляемой кнопки. */
-                "name": "MyButton",
-                /* Свойства, передаваемые в конструктор элемента. */
-                "values": {
-                    /* Тип добавляемого элемента — кнопка. */
-                    "itemType": Terrasoft.ViewItemType.BUTTON,
-                    /* Привязка заголовка кнопки к локализуемой строке схемы. */
-                    "caption": {bindTo: "Resources.Strings.MyButtonCaption"},
-                    /* Привязка метода-обработчика нажатия кнопки. */
-                    "click": {bindTo: "onMyButtonClick"},
-                    /* Привязка свойства доступности кнопки. */
-                    "enabled": {bindTo: "getMyButtonEnabled"},
-                    /* Стиль отображения кнопки. */
-                    "style": Terrasoft.controls.ButtonEnums.style.RED,
+			{
+				"operation": "insert",
+				"name": "MyButton",
+				"values": {
+					"itemType": 5,
+					"caption": {
+						"bindTo": "Resources.Strings.MyButtonCaption"
+					},
+					"click": {
+						"bindTo": "onMyButtonClick"
+					},
+					"enabled": {
+						"bindTo": "getMyButtonEnabled"
+					},
+					"style": "red",
 					"layout": {
-						"colSpan": 12,
+						"colSpan": 24,
+						"rowSpan": 1,
+						"column": 0,
+						"row": 4,
+						"layoutName": "ProfileContainer"
+					}
+				},
+				"parentName": "ProfileContainer",
+				"propertyName": "items",
+				"index": 3
+			},
+			{
+				"operation": "insert",
+				"name": "FLOAT11c9adf8-07fc-4ba1-b19c-4d1fa0d41bb6",
+				"values": {
+					"layout": {
+						"colSpan": 24,
 						"rowSpan": 1,
 						"column": 0,
 						"row": 3,
 						"layoutName": "ProfileContainer"
-					}
-                }
-            },			
+					},
+					"bindTo": "UsrCommissionUSD",
+					"enabled": false
+				},
+				"parentName": "ProfileContainer",
+				"propertyName": "items",
+				"index": 4
+			},
 			{
 				"operation": "insert",
 				"name": "LOOKUPf077589a-792d-4180-8d6a-86e73ba51337",

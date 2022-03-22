@@ -77,7 +77,15 @@
   "E17": "UsrOfferTypeId",
   "E18": "UsrOfferTypeName"
 }
-~ MetaData.Schema.D2 ["ae0e45ca-c495-4fe7-a39d-3ab7278e1617","e80190a5-03b2-4095-90f7-a193a960adee","ebf6bb93-8aa6-4a01-900d-c6ea67affe21","9928edec-4272-425a-93bb-48743fee4b04","3015559e-cbc6-406a-88af-07f7930be832","3fabd836-6a53-4d8d-9069-6df88d9dae1e","8c7da461-6370-436c-b73c-3d5081e24be2","c0b1c833-9e5b-4aba-b30e-b3cd6aa3927b","c3a57ef3-3567-46d0-9791-92b228d454af","aa6d0cbd-bed8-4dfb-9fed-b7c34337195a","8f3a3a29-75fc-427c-b551-4afed1238c38","4bd7af15-3db8-427c-b156-adff6c81a419"]
++ MetaData.Schema.D2 {
+  "UId": "58070a47-2853-4106-8909-d205a9ebf86f",
+  "A2": "UsrCommissionUSD",
+  "A3": "19a25382-257f-4443-adc6-a15579f610ba",
+  "A4": "19a25382-257f-4443-adc6-a15579f610ba",
+  "A5": "0d1ddbca-7370-4293-ac41-e25a514c7f26",
+  "S2": "5cc8060d-6d10-4773-89fc-8c12d6f659a6"
+}
+~ MetaData.Schema.D2 ["ae0e45ca-c495-4fe7-a39d-3ab7278e1617","e80190a5-03b2-4095-90f7-a193a960adee","ebf6bb93-8aa6-4a01-900d-c6ea67affe21","9928edec-4272-425a-93bb-48743fee4b04","3015559e-cbc6-406a-88af-07f7930be832","3fabd836-6a53-4d8d-9069-6df88d9dae1e","8c7da461-6370-436c-b73c-3d5081e24be2","c0b1c833-9e5b-4aba-b30e-b3cd6aa3927b","c3a57ef3-3567-46d0-9791-92b228d454af","aa6d0cbd-bed8-4dfb-9fed-b7c34337195a","8f3a3a29-75fc-427c-b551-4afed1238c38","4bd7af15-3db8-427c-b156-adff6c81a419","58070a47-2853-4106-8909-d205a9ebf86f"]
 - MetaData.Schema.EG1.B6
 - MetaData.Schema.EG1.BK29
 - MetaData.Schema.EG1.BK30

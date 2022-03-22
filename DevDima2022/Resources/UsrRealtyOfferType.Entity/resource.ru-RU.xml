@@ -3,6 +3,7 @@
 	<Group Type="String">
 		<Items>
 			<Item Name="Caption" Value="Тип предложения недвижимости" />
+			<Item Name="Columns.UsrCommissionCoeff.Caption" Value="Коэфф. комиссии, %" />
 			<Item Name="EventsProcessSchema.Caption" Value="Бизнес-процесс" />
 		</Items>
 	</Group>
