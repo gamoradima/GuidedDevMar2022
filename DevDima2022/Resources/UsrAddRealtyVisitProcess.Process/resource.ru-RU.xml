@@ -13,22 +13,20 @@
 			<Item Name="BaseElements.AddDataUserTask1.Parameters.RecordDefValues.Value.0531b3cb-0a71-4f76-b96c-bacee30850dc.displayValue" Value="Автоматически создан просмотр" />
 			<Item Name="BaseElements.AddDataUserTask1.Parameters.RecordDefValues.Value.0531b3cb-0a71-4f76-b96c-bacee30850dc.value" Value="Автоматически создан просмотр" />
 			<Item Name="BaseElements.AddDataUserTask1.Parameters.RecordId.Caption" Value="Id созданной записи" />
-			<Item Name="BaseElements.AddDataUserTask2.Caption" Value="добавить просмотр -2" />
-			<Item Name="BaseElements.AddDataUserTask2.Parameters.ConsiderTimeInFilter.Caption" Value="Учитывать время в фильтре" />
-			<Item Name="BaseElements.AddDataUserTask2.Parameters.ConsiderTimeInFilter.DisplayValue" Value="true" />
-			<Item Name="BaseElements.AddDataUserTask2.Parameters.DataSourceFilters.Caption" Value="Фильтры источника данных" />
-			<Item Name="BaseElements.AddDataUserTask2.Parameters.EntitySchemaId.Caption" Value="Объект" />
-			<Item Name="BaseElements.AddDataUserTask2.Parameters.FilterEntitySchemaId.Caption" Value="Объект выборки" />
-			<Item Name="BaseElements.AddDataUserTask2.Parameters.RecordAddMode.Caption" Value="Режим добавления записей" />
-			<Item Name="BaseElements.AddDataUserTask2.Parameters.RecordDefValues.Caption" Value="Значения полей" />
-			<Item Name="BaseElements.AddDataUserTask2.Parameters.RecordDefValues.Value.0531b3cb-0a71-4f76-b96c-bacee30850dc.displayValue" Value="Автоматически создан просмотр" />
-			<Item Name="BaseElements.AddDataUserTask2.Parameters.RecordDefValues.Value.0531b3cb-0a71-4f76-b96c-bacee30850dc.value" Value="Автоматически создан просмотр" />
-			<Item Name="BaseElements.AddDataUserTask2.Parameters.RecordId.Caption" Value="Id созданной записи" />
+			<Item Name="BaseElements.ConditionalSequenceFlow1.Caption" Value="Кол-во &gt; 0" />
+			<Item Name="BaseElements.FormulaTask1.Caption" Value="установить RealtyId" />
+			<Item Name="BaseElements.FormulaTask2.Caption" Value="уменьшит счетчик" />
+			<Item Name="BaseElements.StartEvent1.Caption" Value="Запуск вручную" />
+			<Item Name="BaseElements.StartSignal1.Caption" Value="Добавлена недвижимость" />
+			<Item Name="BaseElements.StartSignal1.Parameters.RecordId.Caption" Value="Уникальный идентификатор записи" />
+			<Item Name="BaseElements.TerminateEvent1.Caption" Value="Конец" />
 			<Item Name="Caption" Value="Добавить просмотры недвижимости" />
 			<Item Name="LaneSets.LaneSet1.Caption" Value="LaneSet 1" />
 			<Item Name="LaneSets.LaneSet1.Lanes.Lane1.Caption" Value="Lane 1" />
 			<Item Name="NotificationCaption.Caption" Value="Заголовок экземпляра процесса" />
 			<Item Name="NotificationCaption.DisplayValue" Value="[#Название процесса#]" />
+			<Item Name="Parameters.ProcessSchemaParameter1.Caption" Value="Кол-во просмотров" />
+			<Item Name="Parameters.ProcessSchemaParameter1.DisplayValue" Value="5" />
 			<Item Name="Parameters.RealtyId.Caption" Value="RealtyId" />
 		</Items>
 	</Group>

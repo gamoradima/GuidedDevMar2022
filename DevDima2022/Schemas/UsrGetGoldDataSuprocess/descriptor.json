@@ -1,0 +1,10 @@
+﻿{
+  "Descriptor": {
+    "UId": "ffe23c7a-f109-48d8-bdd6-38acfa250b57",
+    "Name": "UsrGetGoldDataSuprocess",
+    "ModifiedOnUtc": "\/Date(1648205604000)\/",
+    "ManagerName": "ProcessSchemaManager",
+    "Caption": "Подпроцесс обработки цен на золото",
+    "DependsOn": []
+  }
+}

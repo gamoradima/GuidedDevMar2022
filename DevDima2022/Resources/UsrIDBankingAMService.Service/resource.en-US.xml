@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Resources Culture="en-US">
+	<Group Type="String">
+		<Items>
+			<Item Name="Caption" Value="https://link.idbanking.am" />
+			<Item Name="Description" Value="Веб-сервис получения курса цены слитков золота в армянском IDBank" />
+			<Item Name="ServiceMethods.UsrGoldRates.Caption" Value="/api/Rate/Gold" />
+			<Item Name="ServiceMethods.UsrGoldRates.Response.Parameters.UsrCSList.Caption" Value="CashSellList" />
+			<Item Name="ServiceMethods.UsrGoldRates.Response.Parameters.UsrCSList.ItemProperties.UsrCSLRate.Caption" Value="Rate" />
+			<Item Name="ServiceMethods.UsrGoldRates.Response.Parameters.UsrCSList.ItemProperties.UsrCSLWeight.Caption" Value="Weight" />
+		</Items>
+	</Group>
+</Resources>

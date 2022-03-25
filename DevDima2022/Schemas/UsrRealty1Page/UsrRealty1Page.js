@@ -1,4 +1,5 @@
-define("UsrRealty1Page", ["RightUtilities", "ProcessModuleUtilities"], function(RightUtilities, ProcessModuleUtilities) {
+define("UsrRealty1Page", ["RightUtilities", "ProcessModuleUtilities", "ServiceHelper"], function(
+	   RightUtilities, ProcessModuleUtilities, ServiceHelper) {
 	return {
 		entitySchemaName: "UsrRealty",
 		messages: {
@@ -203,6 +204,29 @@ define("UsrRealty1Page", ["RightUtilities", "ProcessModuleUtilities"], function(
 				var name = this.get("UsrName");
 				let result = name != '';
 				return result;
+			},
+			onRunWebServiceButtonClick: function() {
+				var typeObject = this.get("UsrType");
+				if (!typeObject) {
+					return;
+				}
+				var typeId = typeObject.value;
+				var offerTypeObject = this.get("UsrOfferType");
+				if (!offerTypeObject) {
+					return;
+				}
+				var offerTypeId = offerTypeObject.value;
+				var serviceData = {
+					realtyTypeId: typeId,
+					realtyOfferTypeId: offerTypeId
+				};				
+				this.console.log("1");
+				ServiceHelper.callService("RealtyService", "GetTotalAmountByTypeId", this.getWebServiceResult, serviceData, this);
+				this.console.log("2");
+			},
+			getWebServiceResult: function(response, success) {
+				this.console.log("3");
+				this.Terrasoft.showInformation("Total amount by typeId: " + response.GetTotalAmountByTypeIdResult);
 			}
 		},
 		dataModels: /**SCHEMA_DATA_MODELS*/{}/**SCHEMA_DATA_MODELS*/,
@@ -288,6 +312,31 @@ define("UsrRealty1Page", ["RightUtilities", "ProcessModuleUtilities"], function(
 				"propertyName": "items",
 				"index": 3
 			},
+			{
+				"operation": "insert",
+				"name": "RunWebServiceButton",
+				"values": {
+					"itemType": 5,
+					"caption": {
+						"bindTo": "Resources.Strings.RunWebServiceButtonCaption"
+					},
+					"click": {
+						"bindTo": "onRunWebServiceButtonClick"
+					},
+					"enabled": true,
+					"style": "blue",
+					"layout": {
+						"colSpan": 24,
+						"rowSpan": 1,
+						"column": 0,
+						"row": 5,
+						"layoutName": "ProfileContainer"
+					}
+				},
+				"parentName": "ProfileContainer",
+				"propertyName": "items",
+				"index": 4
+			},			
 			{
 				"operation": "insert",
 				"name": "FLOAT11c9adf8-07fc-4ba1-b19c-4d1fa0d41bb6",

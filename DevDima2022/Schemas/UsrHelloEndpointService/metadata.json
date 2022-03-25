@@ -1,0 +1,73 @@
+﻿{
+  "MetaData": {
+    "Schema": {
+      "ManagerName": "ServiceSchemaManager",
+      "UId": "0d2c06a6-0302-42e3-a58d-35286b6848ab",
+      "A2": "UsrHelloEndpointService",
+      "A5": "0d1ddbca-7370-4293-ac41-e25a514c7f26",
+      "B1": [],
+      "B2": [],
+      "B3": [],
+      "B6": "5948a895-2cd2-669f-6101-05d2028ed4ec",
+      "B8": "8.0.0.5459",
+      "IQ1": "https://www.learnwebservices.com/services/hello",
+      "IQ2": 2,
+      "IQ7": [
+        {
+          "UId": "ff9b61bc-54d8-4870-b579-beac9f001f75",
+          "A2": "http://learnwebservices.com/services/hello",
+          "A3": "0d2c06a6-0302-42e3-a58d-35286b6848ab",
+          "A4": "0d2c06a6-0302-42e3-a58d-35286b6848ab",
+          "JG1": "tem",
+          "JG2": true
+        }
+      ],
+      "IQ4": [
+        {
+          "UId": "b476c003-2f82-5c1e-35dd-4a2a0c245ee1",
+          "A2": "UsrSHello_ec0ba8e4",
+          "A3": "0d2c06a6-0302-42e3-a58d-35286b6848ab",
+          "A4": "0d2c06a6-0302-42e3-a58d-35286b6848ab",
+          "IR3": 5000,
+          "IR5": "null",
+          "IR1": {
+            "IW2": 2,
+            "IW1": [
+              {
+                "UId": "9cf99672-83d6-7fac-ab95-383dea2a7e36",
+                "A2": "UsrName",
+                "IU1": "tem:HelloRequest/tem:Name",
+                "IU2": "Text",
+                "IU8": "tem:Name",
+                "IU4": 1,
+                "IU5": {
+                  "IV1": "null"
+                },
+                "IU6": []
+              }
+            ],
+            "IT2": 2,
+            "IT1": "SayHello"
+          },
+          "IR2": {
+            "IW2": 2,
+            "IW1": [
+              {
+                "UId": "331ed092-4ab9-35b1-77c5-fc4efcbcd729",
+                "A2": "UsrMessage",
+                "IU1": "tem:HelloResponse/tem:Message",
+                "IU2": "Text",
+                "IU8": "tem:Message",
+                "IU4": 1,
+                "IU5": {
+                  "IV1": "null"
+                },
+                "IU6": []
+              }
+            ]
+          }
+        }
+      ]
+    }
+  }
+}

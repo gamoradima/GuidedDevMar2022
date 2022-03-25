@@ -4,6 +4,7 @@
 		<Items>
 			<Item Name="Caption" Value="Страница редактирования: &quot;Недвижимость&quot;" />
 			<Item Name="LocalizableStrings.MyButtonCaption.Value" Value="Добавить просмотры" />
+			<Item Name="LocalizableStrings.RunWebServiceButtonCaption.Value" Value="Запуск web-сервиса" />
 			<Item Name="LocalizableStrings.TabRealtyVisitTabCaption.Value" Value="Просмотры" />
 			<Item Name="LocalizableStrings.UsrRealtyVisitDetailDetailCaptionOnPage.Value" Value="Просмотр недвижимости" />
 		</Items>

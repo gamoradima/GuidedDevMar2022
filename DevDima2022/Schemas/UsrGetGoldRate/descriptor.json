@@ -1,0 +1,10 @@
+﻿{
+  "Descriptor": {
+    "UId": "f4abfcd9-3e0f-4465-a6b3-ce515638066e",
+    "Name": "UsrGetGoldRate",
+    "ModifiedOnUtc": "\/Date(1648205880000)\/",
+    "ManagerName": "ProcessSchemaManager",
+    "Caption": "Получить цены на золото",
+    "DependsOn": []
+  }
+}

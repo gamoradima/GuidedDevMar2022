@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Resources Culture="en-US">
+	<Group Type="String">
+		<Items>
+			<Item Name="Caption" Value="HelloEndpointService" />
+			<Item Name="ServiceMethods.UsrSHello_ec0ba8e4.Caption" Value="SayHello" />
+			<Item Name="ServiceMethods.UsrSHello_ec0ba8e4.Request.Parameters.UsrName.Caption" Value="Name" />
+			<Item Name="ServiceMethods.UsrSHello_ec0ba8e4.Response.Parameters.UsrMessage.Caption" Value="Message" />
+		</Items>
+	</Group>
+</Resources>
